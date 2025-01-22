@@ -4,29 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Play:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Spicy+Rice&family=Unbounded&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Play:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Spicy+Rice&family=Unbounded&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather Forecast App</title>
   </head>
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city.." required />
-          <input type="submit" value="search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
+        <div class="weather-app-data">
         <div>
-          <h1>Paris</h1>
-          <p>
-            Tuesday 14:49, scattered clouds
+          <h1 class="weather-app-city">Paris</h1>
+          <p class="weather-app-details">
+            Tuesday <span>14:49</span>, scattered clouds
             <br />
-            Humidity: 66%, Wind: 3.13km/h
+            Humidity: <span>66%</span>, 
+            Wind: <span>3.13km/h</span>
           </p>
         </div>
-        <div>⛅ 12&deg;C</div>
+        <div class="weather-app-temperature-container">
+          <div class="weather-app-icon">⛅</div> 
+          <div class="weather-app-temperature">12</div>
+          <div class="weather-app-unit">&deg;C</div>
+        </div>
+      </div>
       </main>
 
       <footer>
