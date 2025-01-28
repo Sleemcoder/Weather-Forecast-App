@@ -1,15 +1,17 @@
-html {
-    height: 100%} 
-    
 body {
     background: linear-gradient(109.6deg, rgb(72, 200, 160) 11.2%, rgb(32, 40, 48) 91.3%);
     font-family: "Rubik", serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .weather-app {
     background: rgb(185, 255, 255);
     max-width: 600px;
-    margin: 45px auto;
     padding: 30px;
     box-shadow: 20px 30px 50px rgba(1, 73, 73, 0.8);
     border-radius: 16px;
@@ -24,14 +26,14 @@ header {
     background-color: rgb(72, 200, 160);
     border: none;
     border-radius: 6px;
-    width: 80%;
+    width: 78%;
     padding: 15px 20px;
     font-size: 16px;
 }
 
 .search-form-button {
     background-color: white;
-    padding: 15px 29px;
+    padding: 15px 30px;
     margin-left: 5px;
     border: none;
     border-radius: 6px;
